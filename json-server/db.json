@@ -19,18 +19,135 @@
   "user": [{
     "id":0,
     "email": "thongxuan327@gmail.com",
-    "passworld":"123456"
+    "passworld":"123456",
+    "Projects": 125,
+    "Revenus": 126,
+    "name": "thong",
+    "position": "frontend",
+    "firstName": "Xuân",
+    "lastName": "Thống",
+    "wage": "10.000.000",
+    "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/brvn-15950048783381206275371.jpg"
   },
   {
     "id":1,
     "email": "thongxudfdfan327@gmail.com",
-    "passworld":"123456"
+    "passworld":"123456",
+    "name": "ĐỨC",
+    "Projects": 125,
+    "Revenus": 126,
+    "position": "frontend",
+    "firstName": "Xuân",
+    "wage": "15.000.000",
+    "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
+    "lastName": "Đức"
   },
   {
     "id":2,
     "email": "thongxudfdsdfan327@gmail.com",
-    "passworld":"123456fd"
+    "passworld":"123456fd",  
+    "name": "ĐỨC",
+    "Projects": 125,
+    "Revenus": 126,
+    "position": "frontend",
+    "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
+    "firstName": "Xuân",
+    "wage": "15.000.000",
+    "lastName": "Đức"
   }
+  ,
+  {
+    "id":3,
+    "email": "thongxudfdsdfan327@gmail.com",
+    "passworld":"123456fd",  
+    "name": "ĐỨC",
+    "Projects": 125,
+    "Revenus": 126,
+    "position": "frontend",
+    "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
+    "firstName": "Xuân",
+    "wage": "15.000.000",
+    "lastName": "Đức"
+  },
+  {
+    "id":4,
+    "email": "thongxudfdsdfan327@gmail.com",
+    "passworld":"123456fd",  
+    "name": "ĐỨC",
+    "Projects": 125,
+    "Revenus": 126,
+    "position": "frontend",
+    "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
+    "firstName": "Xuân",
+    "wage": "15.000.000",
+    "lastName": "Đức"
+  },
+  {
+    "id":5,
+    "email": "thongxudfdsdfan327@gmail.com",
+    "passworld":"123456fd",  
+    "name": "ĐỨC",
+    "Projects": 125,
+    "Revenus": 126,
+    "position": "frontend",
+    "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
+    "firstName": "Xuân",
+    "wage": "15.000.000",
+    "lastName": "Đức"
+  },
+  {
+    "id":6,
+    "email": "thongxudfdsdfan327@gmail.com",
+    "passworld":"123456fd",  
+    "name": "ĐỨC",
+    "Projects": 125,
+    "Revenus": 126,
+    "position": "frontend",
+    "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
+    "firstName": "Xuân",
+    "wage": "15.000.000",
+    "lastName": "Đức"
+  },
+  {
+    "id":7,
+    "email": "thongxudfdsdfan327@gmail.com",
+    "passworld":"123456fd",  
+    "name": "ĐỨC",
+    "Projects": 125,
+    "Revenus": 126,
+    "position": "frontend",
+    "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
+    "firstName": "Xuân",
+    "wage": "15.000.000",
+    "lastName": "Đức"
+  },
+  {
+    "id":8,
+    "email": "thongxudfdsdfan327@gmail.com",
+    "passworld":"123456fd",  
+    "name": "ĐỨC",
+    "Projects": 125,
+    "Revenus": 126,
+    "position": "frontend",
+    "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
+    "firstName": "Xuân",
+    "wage": "15.000.000",
+    "lastName": "Đức"
+  },
+  {
+    "id":9,
+    "email": "thongxudfdsdfan327@gmail.com",
+    "passworld":"123456fd",  
+    "name": "ĐỨC",
+    "Projects": 125,
+    "Revenus": 126,
+    "position": "frontend",
+    "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
+    "firstName": "Xuân",
+    "wage": "15.000.000",
+    "lastName": "Đức"
+  }
+  
 ]
   
 }
