@@ -1,5 +1,5 @@
 <template>
-<!-- <div>
+  <!-- <div>
   <b-card no-body class="overflow-hidden p-2" style="max-width: 540px;">
     <b-row no-gutters>
       <b-col md="6">
@@ -25,47 +25,46 @@
     </b-row>
   </b-card>
 </div> -->
-<div>
+  <div>
     <div>
-        <h1 class="mt-5 mb-5">Danh Sách Nhân Viên Có Mức Lương Cao Nhất </h1>
-    <b-container>
+      <h1 class="mt-5 mb-5">Danh Sách Nhân Viên Có Mức Lương Cao Nhất</h1>
+      <b-container>
         <b-row no-gutters class="m-auto">
-            <b-col md="4" v-for="user in users" :key="user.id">
-                <b-card no-body class=" m-2 p-2 " style="max-width: 540px;">
-                    <b-row>
-                    <b-col md="6" class="h-100">
-                        <b-card-img :src="user.avata" alt="Image" class="rounded-0 h-100"></b-card-img>
-                    </b-col>
-                    <b-col md="6">
-                        <b-card-body >
-                            <h3>{{ user.name }}</h3>
-                        <b-card-text class="d-flex">
-                             <b-col md="6">
-                             <h6>Projects</h6>
-                            <p>{{ user.Projects }}</p>
-                            </b-col>
-                            <b-col md="6">
-                             <h6>Revenus</h6>
-                            <p>{{ user.Revenus }}</p>
-                            </b-col>
+          <b-col md="4" v-for="user in users" :key="user.id">
+            <b-card no-body class=" m-2 p-2 " style="max-width: 540px;">
+              <b-row>
+                <b-col md="6" class="h-100">
+                  <b-card-img :src="user.avata" alt="Image" class="rounded-0 h-100"></b-card-img>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body>
+                    <h3>{{ user.name }}</h3>
+                    <b-card-text class="d-flex">
+                      <b-col md="6">
+                        <h6>Projects</h6>
+                        <p>{{ user.Projects }}</p>
+                      </b-col>
+                      <b-col md="6">
+                        <h6>Revenus</h6>
+                        <p>{{ user.Revenus }}</p>
+                      </b-col>
                     </b-card-text>
-                    </b-card-body>
-                     <div>
-                        <span><b>Wage</b></span>
-                        <span>{{ user.wage }}</span>
-                     </div>
-        <b-button variant="primary" class="mb-2">View Profile</b-button>
+                  </b-card-body>
+                  <div>
+                    <span><b>Wage</b></span>
+                    <span>{{ user.wage }}</span>
+                  </div>
+                  <b-button variant="primary" class="mb-2" @click="showDetail(user.id)">View Profile</b-button>
                 </b-col>
               </b-row>
             </b-card>
-        </b-col>
-    </b-row>
-
-        </b-container>
-
-</div>
-</div>
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
+  </div>
 </template>
+
 <script>
 import axios from 'axios'
 
@@ -80,11 +79,13 @@ export default {
       Revenus: 0,
       firstName: '',
       lastName: '',
-      position: ''
+      position: '',
+      id: 0
     }
   },
   created () {
-    axios.get('http://localhost:3000/user')
+    axios
+      .get('http://localhost:3000/user')
       .then(data => {
         this.users = data.data
         console.log(this.users)
@@ -94,14 +95,19 @@ export default {
         this.Revenus = data.data[0].Revenus
         this.position = data.data[0].position
       })
-
       .catch(err => console.log(err))
+  },
+  methods: {
+    showDetail (id) {
+      this.$router.push(`/${id}`)
+    }
   }
 }
 </script>
 <style>
-.overflow-hidden{
-    background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+.overflow-hidden {
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 </style>

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '../components/Login.vue'
 import Home from '../components/Home.vue'
-
+import ProfileUser from '../components/ProfileUser.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -17,6 +17,10 @@ export default new Router({
     {
       path: '/login',
       component: Login
+    },
+    {
+      path: `/:id`,
+      component: ProfileUser
     }
   ]
 })

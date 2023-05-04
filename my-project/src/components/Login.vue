@@ -30,9 +30,6 @@
         </b-form-group>
     <div class="mt-3">
             <b-button type="submit" variant="primary">Submit</b-button>
-        <b-button >
-             <RouterLink to="/" >Home</RouterLink>
-        </b-button>
     </div>
 
       </b-form>
