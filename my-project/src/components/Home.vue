@@ -22,7 +22,7 @@ export default{
     Navbar,
     SideBar,
     HomeContent
-  }
+  },
 
 }
 </script>

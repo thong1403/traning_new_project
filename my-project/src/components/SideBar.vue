@@ -130,6 +130,7 @@
           class="bx bx-log-out"
           id="log_out"
           @click.stop="$emit('button-exit-clicked')"
+          @click="handleClick"
         />
       </div>
     </div>
@@ -360,6 +361,10 @@ export default {
           tooltip.classList.remove('active')
         })
       })
+    },
+    handleClick() {
+      console.log(localStorage.removeItem('user'))
+      this.$router.push('/login')
     }
   }
 }
