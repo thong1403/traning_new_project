@@ -17,7 +17,8 @@ import Navbar from './Navbar.vue'
 import SideBar from './SideBar.vue'
 import HomeContent from './HomeContent.vue'
 export default{
-  components: { RouterLink,
+  components: {
+    RouterLink,
     Navbar,
     SideBar,
     HomeContent

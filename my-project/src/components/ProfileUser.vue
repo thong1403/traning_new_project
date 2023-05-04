@@ -32,7 +32,7 @@
                     </b-card-text>
                     </div>
                     <b-button>
-                        <router-link to="/">
+                        <router-link to="/" style="text-decoration: none; color: white">
                             HOME
 
                         </router-link>
@@ -92,3 +92,6 @@ export default {
 
 }
 </script>
+<style>
+
+</style>
