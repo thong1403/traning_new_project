@@ -37,10 +37,13 @@
                         </router-link>
                     </b-button>
                     <b-button>
-                      <router-link to="/edit" style="text-decoration: none; color: white">
+                      <router-link :to="`/edit/${id}`" style="text-decoration: none; color: white">
                         EDIT
                       </router-link>
                     </b-button>
+                    <b-button @click="handelDelete">
+                      DELETE
+                  </b-button>
                   </b-card-body>
                 </b-col>
               </b-row>
@@ -90,6 +93,16 @@ export default {
         .catch(err => {
           console.log(err)
         })
+    },
+    handelDelete () {
+      axios.delete(`http://localhost:3000/user/${this.id}`)
+        .then(data => {
+          alert('Xoá thành công')
+          this.$router.push('/home')
+        }
+
+        )
+        .catch(err => console.log(err))
     }
 
   }

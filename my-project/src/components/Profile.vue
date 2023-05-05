@@ -59,6 +59,11 @@
               </b-row>
             </b-card>
           </b-col>
+          <b-button class="w-100">
+            <router-link to="/newuser" >
+            Thêm thành viên
+            </router-link>
+          </b-button>
         </b-row>
       </b-container>
     </div>
@@ -72,6 +77,14 @@ console.log(this.user)
 export default {
   data () {
     return {
+      profile: {
+        name: '',
+        Projects: '',
+        Revenus: '',
+        position: '',
+        avata: '',
+        wage: ''
+      },
       users: [],
       name: '',
       avata: '',

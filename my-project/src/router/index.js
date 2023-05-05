@@ -5,6 +5,7 @@ import Home from '../components/Home.vue'
 import ProfileUser from '../components/ProfileUser.vue'
 import CheckUser from '../components/CheckUser.vue'
 import EditUser from '../components/EditUser.vue'
+import NewUser from '../components/newuser.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -14,6 +15,11 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: Home
+    },
+
+    {
+      path: '/newuser',
+      component: NewUser
     },
 
     {
@@ -29,7 +35,7 @@ export default new Router({
       component: CheckUser
     },
     {
-      path: `/edit`,
+      path: `/edit/:id`,
       component: EditUser
     }
   ]
