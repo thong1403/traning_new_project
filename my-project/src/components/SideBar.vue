@@ -362,7 +362,7 @@ export default {
         })
       })
     },
-    handleClick() {
+    handleClick () {
       console.log(localStorage.removeItem('user'))
       this.$router.push('/login')
     }

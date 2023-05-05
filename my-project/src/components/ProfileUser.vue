@@ -34,8 +34,12 @@
                     <b-button>
                         <router-link to="/" style="text-decoration: none; color: white">
                             HOME
-
                         </router-link>
+                    </b-button>
+                    <b-button>
+                      <router-link to="/edit" style="text-decoration: none; color: white">
+                        EDIT
+                      </router-link>
                     </b-button>
                   </b-card-body>
                 </b-col>
