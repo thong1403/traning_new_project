@@ -18,19 +18,6 @@
   },
   "user": [
     {
-      "id": 3,
-      "email": "thongxudfdsdfan327@gmail.com",
-      "passworld": "123456fd",
-      "name": "ĐỨC",
-      "Projects": 125,
-      "Revenus": 126,
-      "position": "frontend",
-      "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
-      "firstName": "Xuân",
-      "wage": "15.000.000",
-      "lastName": "Đức"
-    },
-    {
       "id": 4,
       "email": "thongxudfdsdfan327@gmail.com",
       "passworld": "123456fd",
@@ -41,46 +28,39 @@
       "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
       "firstName": "Xuân",
       "wage": "15.000.000",
-      "lastName": "Đức"
+      "lastName": "Đức",
+      "introduce": "Hi, I am Thu. I am from Nam Dinh province. I completed my bachelor degree from Hanoi University of Science and Technology in 2018. I love playing basketball and have represented my university in many competitions. My active participation in sports and professional competitions has taught me many skills."
     },
     {
-      "id": 5,
-      "email": "thongxudfdsdfan327@gmail.com",
-      "passworld": "123456fd",
-      "name": "ĐỨC",
-      "Projects": 125,
-      "Revenus": 126,
-      "position": "frontend",
-      "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
-      "firstName": "Xuân",
-      "wage": "15.000.000",
-      "lastName": "Đức"
+      "name": "long",
+      "Projects": "120",
+      "Revenus": "10",
+      "position": "fullstack",
+      "avata": "https://www.xanhda.com/wp-content/uploads/2019/07/hinh-anh-gai-dep-18.jpg",
+      "wage": "100.000.000",
+      "introduce": "df",
+      "id": 5
     },
     {
+      "name": "hoàng",
+      "Projects": "1",
+      "Revenus": "2",
+      "position": "backend",
+      "avata": "https://thegioionline.net/wp-content/uploads/2023/04/hinh-anh-gai-xinh-cap-2-3-1200x1643-1.jpg",
+      "wage": "12.000.000",
       "id": 6,
-      "email": "thongxudfdsdfan327@gmail.com",
-      "passworld": "123456fd",
-      "name": "ĐỨC",
-      "Projects": 125,
-      "Revenus": 126,
-      "position": "frontend",
-      "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
-      "firstName": "Xuân",
-      "wage": "15.000.000",
-      "lastName": "Đức"
+      "introduce": "Hi, I am Thu. I am from Nam Dinh province. I completed my bachelor degree from Hanoi University of Science and Technology in 2018. I love playing basketball and have represented my university in many competitions. My active participation in sports and professional competitions has taught me many skills."
     },
     {
-      "id": 7,
-      "email": "thongxudfdsdfan327@gmail.com",
-      "passworld": "123456fd",
-      "name": "ĐỨC",
-      "Projects": 125,
-      "Revenus": 126,
+      "name": "chung",
+      "Projects": "1",
+      "Revenus": "1",
       "position": "frontend",
-      "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
-      "firstName": "Xuân",
-      "wage": "15.000.000",
-      "lastName": "Đức"
+      "avata": "https://antimatter.vn/wp-content/uploads/2022/10/hinh-nen-gai-xinh.jpg",
+      "wage": "10.000.000",
+      "email": "chung12@gmail.com",
+      "id": 7,
+      "introduce": "Hi, I am Thu. I am from Nam Dinh province. I completed my bachelor degree from Hanoi University of Science and Technology in 2018. I love playing basketball and have represented my university in many competitions. My active participation in sports and professional competitions has taught me many skills."
     },
     {
       "id": 8,
@@ -93,35 +73,49 @@
       "avata": "https://kenh14cdn.com/thumb_w/660/2020/7/17/br5-1595004992706581407618.jpg",
       "firstName": "Xuân",
       "wage": "15.000.000",
-      "lastName": "Đức"
+      "lastName": "Đức",
+      "introduce": "Hi, I am Thu. I am from Nam Dinh province. I completed my bachelor degree from Hanoi University of Science and Technology in 2018. I love playing basketball and have represented my university in many competitions. My active participation in sports and professional competitions has taught me many skills."
     },
     {
       "name": "thống",
       "Projects": "1",
       "Revenus": "2",
-      "position": "23",
+      "position": "frontend",
       "avata": "https://i.9mobi.vn/cf/Images/np/2022/9/5/hinh-dep-3.jpg",
-      "wage": "122",
-      "id": 9
+      "wage": "1 tỷ",
+      "id": 9,
+      "introduce": "Hi, I am Thu. I am from Nam Dinh province. I completed my bachelor degree from Hanoi University of Science and Technology in 2018. I love playing basketball and have represented my university in many competitions. My active participation in sports and professional competitions has taught me many skills."
     },
     {
       "name": "hoàng",
       "Projects": "1",
       "Revenus": "2",
-      "position": "12",
+      "position": "backend",
       "avata": "https://thegioionline.net/wp-content/uploads/2023/04/hinh-anh-gai-xinh-cap-2-3-1200x1643-1.jpg",
-      "wage": "21",
-      "id": 10
+      "wage": "12.000.000",
+      "id": 10,
+      "introduce": "Hi, I am Thu. I am from Nam Dinh province. I completed my bachelor degree from Hanoi University of Science and Technology in 2018. I love playing basketball and have represented my university in many competitions. My active participation in sports and professional competitions has taught me many skills."
     },
     {
       "name": "chung",
       "Projects": "1",
       "Revenus": "1",
-      "position": "1",
+      "position": "frontend",
       "avata": "https://antimatter.vn/wp-content/uploads/2022/10/hinh-nen-gai-xinh.jpg",
-      "wage": "1",
+      "wage": "10.000.000",
       "email": "chung12@gmail.com",
-      "id": 11
+      "id": 11,
+      "introduce": "Hi, I am Thu. I am from Nam Dinh province. I completed my bachelor degree from Hanoi University of Science and Technology in 2018. I love playing basketball and have represented my university in many competitions. My active participation in sports and professional competitions has taught me many skills."
+    },
+    {
+      "name": "biên",
+      "Projects": "1",
+      "Revenus": "23",
+      "position": "frontend",
+      "avata": "https://1.bp.blogspot.com/-7flI7-9eC-I/XqhW9Ym_EmI/AAAAAAAAjr0/Cm04PLA1lUgpvCeqZUZYmrV5sHkyCvNgACLcBGAsYHQ/s1600/Anh-gai-xinh-toc-ngan%2B%252874%2529.jpg",
+      "wage": "8.000.000",
+      "introduce": "dhjfjgbfhuhfhghf",
+      "id": 12
     }
   ]
 }
