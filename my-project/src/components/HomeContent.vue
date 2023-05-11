@@ -1,21 +1,18 @@
 <template>
-    <div>
-        <ProFlie/>
-        <EmailSent/>
-    </div>
+  <div>
+    <ProFlie />
+  </div>
 </template>
 <script>
-import ProFlie from './Profile.vue'
-import EmailSent from './EmailSent.vue'
+import ProFlie from "./Profile.vue";
 export default {
   components: {
-    ProFlie,
-    EmailSent
+    ProFlie
   }
-}
+};
 </script>
 <style>
-body{
-    background-color: rgb(228, 228, 228);
+body {
+  background-color: rgb(228, 228, 228);
 }
 </style>

@@ -2,53 +2,47 @@
     <div>
         <Navbar/>
         <SideBar/>
-        <div>
-            <b-card no-body class="overflow-hidden" style="max-width: 540px;">
-              <b-row no-gutters>
-                <b-col md="6">
-                  <b-card-img :src="avata" alt="Image" class="rounded-0"></b-card-img>
-                </b-col>
-                <b-col md="6">
-                  <b-card-body :title="name" >
-                    <div class="d-flex">
-                        <b-card-text class="m-2">
-                        <span><b>Projects:</b></span>
-                        {{ Projects }}
-                    </b-card-text>
-                    <b-card-text class="m-2">
-                        <span><b>Revenus:</b>
-                        </span>
-                        {{ Revenus }}
-                    </b-card-text>
-                    </div>
-                    <div class="d-flex">
-                         <b-card-text class="m-2">
-                        <h5>Position:</h5>
-                        <p>{{ position}}</p>
-                    </b-card-text>
-                    <b-card-text class="m-2">
-                        <h5>Lương:</h5>
-                        <p>{{ wage}}</p>
-                    </b-card-text>
-                    </div>
-                    <b-button>
-                        <router-link to="/" style="text-decoration: none; color: white">
-                            HOME
-                        </router-link>
-                    </b-button>
-                    <b-button>
-                      <router-link :to="`/edit/${id}`" style="text-decoration: none; color: white">
-                        EDIT
-                      </router-link>
-                    </b-button>
-                    <b-button @click="handelDelete">
-                      DELETE
-                  </b-button>
-                  </b-card-body>
-                </b-col>
-              </b-row>
-            </b-card>
-          </div>
+    <div>
+    <div>
+    <div class="w-50 m-auto mt-5 container-edit-user">
+        <img :src="avata" alt="" class=" img-user" >
+      <div>
+        <div class="d-flex mt-3" >
+          <h5 class="mt-3" >Name </h5>
+          <b-form-input v-model="profile.name" placeholder="Enter your name" class="w-100"></b-form-input>
+        </div>
+         <div class="d-flex mt-3" >
+          <h5 class="mt-3">Position </h5>
+          <b-form-input v-model="profile.position" placeholder="Enter your name" class="w-100"></b-form-input>
+        </div>
+         <div class="d-flex mt-3" >
+          <h5 class="mt-3">Project </h5>
+          <b-form-input v-model="profile.Projects" placeholder="Enter your name" class="w-100"></b-form-input>
+        </div>
+         <div class="d-flex mt-3" >
+          <h5 class="mt-3">avata </h5>
+          <b-form-input v-model="profile.avata" placeholder="Enter your name" class="w-100"></b-form-input>
+        </div>
+         <div class="d-flex mt-3" >
+          <h5 class="mt-3">Revenus </h5>
+          <b-form-input v-model="profile.Revenus" placeholder="Enter your name" class="w-100"></b-form-input>
+        </div>
+          <div class="d-flex mt-3" >
+          <h5 class="mt-3">introduce </h5>
+          <b-form-input v-model="profile.introduce" placeholder="Enter your name" class="w-100"></b-form-input>
+        </div>
+         <div class="d-flex mt-3">
+          <h5 class="mt-3">Wage </h5>
+          <b-form-input v-model="profile.wage" placeholder="Enter your name" class="w-100"></b-form-input>
+        </div>
+        <button @click="handleClick" class="btn-update">
+        UPDATE</button>
+        <button @click="clickHome" class="btn-update">HOME</button>
+      </div>
+    </div>
+
+    </div>
+</div>
     </div>
 </template>
 
@@ -71,7 +65,17 @@ export default {
       Revenus: '',
       position: '',
       avata: '',
-      wage: ''
+      wage: '',
+      text: '',
+      profile: {
+        name: '',
+        Projects: '',
+        Revenus: '',
+        position: '',
+        avata: '',
+        wage: '',
+        introduce: ''
+      }
     }
   },
   created () {
@@ -81,7 +85,7 @@ export default {
   },
   methods: {
     getData () {
-      axios.get(`http://localhost:3000/user/${this.id}`)
+      axios.get(`http://localhost:3000/user/${this.$route.params.id}`)
         .then(data => {
           this.name = data.data.name
           this.Projects = data.data.Projects
@@ -94,21 +98,44 @@ export default {
           console.log(err)
         })
     },
-    handelDelete () {
-      axios.delete(`http://localhost:3000/user/${this.id}`)
+     handleClick () {
+      axios.put(`http://localhost:3000/user/${this.id}`, this.profile)
         .then(data => {
-          alert('Xoá thành công')
+          alert('Edit thành công')
           this.$router.push('/home')
-        }
-
-        )
+        })
         .catch(err => console.log(err))
+    },
+    clickHome(){
+       this.$router.push('/home')
     }
-
   }
 
 }
 </script>
 <style>
+body{
+  background-color: #E4E4E4;
+}
+.w-100{
+  margin-left: 20px; 
+}
+.img-user{
+  border-radius: 100%;
+  width: 200px
 
+}
+.container-edit-user{
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.btn-update{
+  width: 200px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color:#0000FF
+}
 </style>

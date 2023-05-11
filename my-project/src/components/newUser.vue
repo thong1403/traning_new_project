@@ -2,45 +2,44 @@
     <div>
         <Navbar/>
         <SideBar/>
-        <div>
+        <div class="mt-5 w-50 m-auto new-user-component">
             <div>
                 <label><b>
                      Link Ảnh
                 </b>
                 </label>
-       <b-form-input v-model="profile.avata" class="w-25 m-auto"></b-form-input>
-       </div>
+                <b-form-input v-model="profile.avata" class="w-100 m-auto"></b-form-input>
+            </div>
 
-       <div>
-        <label><b>Name</b></label>
-       <b-form-input v-model="profile.name"  class="w-25 m-auto" value=""></b-form-input>
-       <h1>{{text}}</h1>
-       </div>
-       <div>
+          <div class="mt-3">
+            <label><b>Name</b></label>
+            <b-form-input v-model="profile.name"  class="w-100 m-auto input-newUser" value=""></b-form-input>
+          </div>
+       <div class="mt-3">
            <label><b>Projects</b></label>
-       <b-form-input v-model="profile.Projects"   class="w-25 m-auto" value=""></b-form-input>
+          <b-form-input v-model="profile.Projects"   class="w-100 m-auto input-newUser" value=""></b-form-input>
        </div>
-       <div>
+       <div class="mt-3">
            <label><b>Revenus</b>
            </label>
-           <b-form-input v-model="profile.Revenus"   class="w-25 m-auto" value=""></b-form-input>
+           <b-form-input v-model="profile.Revenus"   class="w-100 m-auto input-newUser" value=""></b-form-input>
        </div>
-       <div>
+       <div class="mt-3">
            <label><b>Position</b>
            </label>
-           <b-form-input v-model="profile.position"  class="w-25 m-auto" value=""></b-form-input>
+           <b-form-input v-model="profile.position"  class="w-100 m-auto input-newUser" value=""></b-form-input>
        </div>
-       <div>
+       <div class="mt-3">
            <label><b>Lương</b>
            </label>
-           <b-form-input v-model="profile.wage"  class="w-25 m-auto" value=""></b-form-input>
+           <b-form-input v-model="profile.wage"  class="w-100 m-auto input-newUser" value=""></b-form-input>
        </div>
-       <div>
-        <label><b>Email</b>
+      <div class="mt-3">
+        <label><b>Introduce</b>
         </label>
-        <b-form-input v-model="profile.email"   class="w-25 m-auto" value=""></b-form-input>
-    </div>
-       <b-button @click="handleClick">UPDATE</b-button>
+        <b-form-input v-model="profile.introduce"   class="w-100 m-auto input-newUser" value=""></b-form-input>
+      </div>
+       <b-button @click="handleClick" class="btn-update-newUser">UPDATE</b-button>
         </div>
     </div>
 </template>
@@ -61,7 +60,7 @@ export default {
         position: '',
         avata: '',
         wage: '',
-        email: ''
+        introduce: ''
       }
     }
   },
@@ -77,3 +76,22 @@ export default {
   }
 }
 </script>
+<style>
+body{
+  background-color: #E4E4E4;
+}
+.new-user-component{
+  background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+.btn-update-newUser{
+  width: 200px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color:#0000FF
+}
+</style>
