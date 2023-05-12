@@ -33,4 +33,9 @@ export default{
 .navbar-dark{
   background-color: #11101d !important;
 }
+.component-navbar{
+  position: fixed;
+    width: 100%;
+    top: 0;
+}
 </style>

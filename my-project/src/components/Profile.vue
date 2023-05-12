@@ -25,7 +25,7 @@
     </b-row>
   </b-card>
 </div> -->
-  <div>
+  <div class="Members-list">
     <h3 class="mt-5">DANH SÁCH NHÂN VIÊN</h3>
     <div class="mt-5">
       <input v-model="searchTerm" type="text" placeholder="Enter employee name" class="w-50 input-search">
@@ -216,5 +216,8 @@ export default {
   border-radius: 20px;
   box-shadow: rgba(20, 20, 34, 0.25) 0px 13px 27px -5px,
   rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.Members-list{
+  margin-top: 100px;
 }
 </style>
