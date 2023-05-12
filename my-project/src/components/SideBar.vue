@@ -116,13 +116,8 @@
             v-else
             class="bx bxs-user-rectangle"
           />
-          <div class="name_job">
-            <div class="name">
-              {{ profileName }}
-            </div>
-            <div class="job">
-              {{ profileRole }}
-            </div>
+          <div>
+            <h5 class="logout-user">LOGOUT</h5>
           </div>
         </div>
         <i
@@ -152,7 +147,7 @@ export default {
     },
     menuTitle: {
       type: String,
-      default: 'Akahon'
+      default: 'AIR DATA'
     },
     menuLogo: {
       type: String,
@@ -675,6 +670,9 @@ export default {
     font-size: 25px;
     font-weight: 500;
     margin: 18px;
+  }
+  .logout-user{
+    color: white;
   }
 
   .my-scroll-active {

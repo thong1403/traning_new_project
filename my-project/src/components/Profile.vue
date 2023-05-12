@@ -27,9 +27,9 @@
 </div> -->
   <div>
     <h3 class="mt-5">DANH SÁCH NHÂN VIÊN</h3>
-    <div>
-      <input v-model="searchTerm" type="text" placeholder="Nhập tên">
-      <button @click="search">Tìm kiếm</button>
+    <div class="mt-5">
+      <input v-model="searchTerm" type="text" placeholder="Enter employee name" class="w-50 input-search">
+      <button @click="search" class="btn-search">SEARCH</button>
     </div>
     <table class="table">
       <thead>
@@ -170,7 +170,7 @@ export default {
 .btn-edit {
   width: 70px;
   color: white;
-  background-color: blue;
+  background-color: rgb(33, 172, 207);
   border: none;
   border-radius: 20px;
 
@@ -190,8 +190,24 @@ export default {
 }
 .btn-newUser{
   color: white;
-  background-color: blue;
+  background-color: rgb(47, 133, 231);
   border: none;
+  border-radius: 20px;
+}
+.btn-search{
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  color: white;
+  padding: 7px;
+  background-color: rgb(34, 115, 207);
+  border-radius: 20px;
+}
+.input-search{
+  height: 40px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
   border-radius: 20px;
 }
 </style>

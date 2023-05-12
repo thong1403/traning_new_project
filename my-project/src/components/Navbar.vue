@@ -1,5 +1,5 @@
 <template>
-<div >
+<div class="component-navbar" >
   <b-navbar type="dark" variant="dark" >
     <b-navbar-nav class="d-flex align-items-center">
       <b-nav-item href="#">Home</b-nav-item>
@@ -30,5 +30,7 @@ export default{
 
 </script>
 <style>
-
+.navbar-dark{
+  background-color: #11101d !important;
+}
 </style>

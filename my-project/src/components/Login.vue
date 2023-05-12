@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <b-card class="w-25 m-auto">
+    <div >
+        <b-card class="w-25 m-auto mt-5">
       <b-form @submit="onSubmit" @reset="onReset" v-if="show" value="" >
         <b-form-group
           id="input-group-1"
@@ -29,7 +29,7 @@
           ></b-form-input>
         </b-form-group>
     <div class="mt-3">
-            <b-button type="submit" variant="primary">Submit</b-button>
+            <b-button type="submit" variant="primary">LOGIN</b-button>
     </div>
 
       </b-form>
@@ -42,6 +42,7 @@
 import { RouterLink } from 'vue-router'
 import router from '../router'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 
 export default {
   data () {
@@ -65,11 +66,21 @@ export default {
       const acction = this.passUser.find(action => action.email === this.form.email && action.passworld === this.form.passworld)
 
       if (acction) {
-        alert('Dang nhap thanh cong')
+        Swal.fire({
+          title: ' SUCCESS!',
+          text: 'successfully added new members.',
+          icon: 'success',
+          confirmButtonText: 'OK'
+        })
         router.push('/')
         localStorage.setItem('user', acction.email)
       } else {
-        alert('that bai')
+        Swal.fire({
+          title: ' ERROT!',
+          text: 'successfully added new members.',
+          icon: 'error',
+          confirmButtonText: 'OK'
+        })
       }
     },
     onReset (event) {
