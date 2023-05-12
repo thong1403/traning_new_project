@@ -43,8 +43,10 @@ import { RouterLink } from 'vue-router'
 import router from '../router'
 import axios from 'axios'
 import Swal from 'sweetalert2'
+import bcrypt from 'bcryptjs'
 
 export default {
+
   data () {
     return {
       form: {
@@ -74,6 +76,7 @@ export default {
         })
         router.push('/')
         localStorage.setItem('user', acction.email)
+        localStorage.setItem('password', bcrypt.hashSync(acction.passworld))
       } else {
         Swal.fire({
           title: ' ERROT!',

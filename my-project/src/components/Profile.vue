@@ -164,8 +164,7 @@ export default {
 <style>
 .overflow-hidden {
   background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
 }
 .btn-edit {
   width: 70px;
@@ -187,12 +186,16 @@ export default {
   margin-top: 100px;
   background-color: white;
   border-radius: 20px;
+  box-shadow: rgba(20, 20, 34, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .btn-newUser{
   color: white;
   background-color: rgb(47, 133, 231);
   border: none;
   border-radius: 20px;
+  box-shadow: rgba(20, 20, 34, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .btn-search{
   padding-left: 10px;
@@ -202,6 +205,8 @@ export default {
   padding: 7px;
   background-color: rgb(34, 115, 207);
   border-radius: 20px;
+  box-shadow: rgba(20, 20, 34, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .input-search{
   height: 40px;
@@ -209,5 +214,7 @@ export default {
   border: none;
   outline: none;
   border-radius: 20px;
+  box-shadow: rgba(20, 20, 34, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 </style>

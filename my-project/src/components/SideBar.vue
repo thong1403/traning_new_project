@@ -117,7 +117,9 @@
             class="bx bxs-user-rectangle"
           />
           <div>
-            <h5 class="logout-user">LOGOUT</h5>
+            <p class="logout-user">
+              {{ email }}
+            </p>
           </div>
         </div>
         <i
@@ -301,8 +303,12 @@ export default {
   },
   data () {
     return {
-      isOpened: false
+      isOpened: false,
+      email: ''
     }
+  },
+  created () {
+    this.email = localStorage.getItem('user')
   },
   mounted () {
     this.isOpened = this.isMenuOpen
@@ -359,6 +365,7 @@ export default {
     },
     handleClick () {
       console.log(localStorage.removeItem('user'))
+      localStorage.removeItem('password')
       this.$router.push('/login')
     }
   }
@@ -673,6 +680,7 @@ export default {
   }
   .logout-user{
     color: white;
+    font-size: 13px;
   }
 
   .my-scroll-active {

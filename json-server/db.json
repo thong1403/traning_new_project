@@ -25,7 +25,7 @@
       "avata": "https://tse2.mm.bing.net/th?id=OIP.EGdvPfNsmePlv4T45laU4AHaJQ&pid=Api&P=0",
       "wage": "10 tỷ",
       "introduce": "fgfjgkfjgkjfdgdf",
-      "email":"thongxuan327@gmail.com",
+      "email": "thongxuan327@gmail.com",
       "passworld": "123456",
       "id": 15
     },
@@ -37,6 +37,8 @@
       "avata": "https://tse3.mm.bing.net/th?id=OIP._n-BdgfeTVtwIGTLAWhXEwHaE_&pid=Api&P=0",
       "wage": "6 tỷ",
       "introduce": "fjhdfjdjfjsdgffhfgh",
+      "email": "chung123@gmail.com",
+      "passworld": "123456",
       "id": 16
     },
     {
@@ -78,6 +80,16 @@
       "wage": "8 tỷ",
       "introduce": "fdfhgsfhgiewutjdgfg",
       "id": 20
+    },
+    {
+      "name": "việt",
+      "Projects": "12",
+      "Revenus": "56",
+      "position": "ba",
+      "avata": "https://1.bp.blogspot.com/-qbB8MUrsX1Q/XSSWRNs31tI/AAAAAAAAAOI/74Rwo0-C6SAL8pB92Hc1CBbl2nBVAIfCACLcBGAs/s1600/1f0333ef332b98e582fb9298d3fb35ab.jpg",
+      "wage": "9 tỷ",
+      "introduce": "fdjhfudyhtuferwfhdjhgfdfg",
+      "id": 21
     }
   ]
 }

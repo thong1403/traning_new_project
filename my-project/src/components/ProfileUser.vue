@@ -135,6 +135,8 @@ body{
   background-color: white;
   padding: 20px;
   border-radius: 20px;
+  box-shadow: rgba(20, 20, 34, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .btn-update{
   width: 200px;
