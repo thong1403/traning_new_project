@@ -52,8 +52,8 @@
           <td>{{ results.Revenus }}</td>
           <td>{{ results.wage }}</td>
           <td>
-            <button class="btn-edit" @click="showDetail(user.id)">EDIT</button>
-            <button class="btn-delete" @click="deleteUser(user.id)">DELETE</button>
+            <button class="btn-edit" @click="showDetail(results.id)">EDIT</button>
+            <button class="btn-delete" @click="deleteUser(results.id)">DELETE</button>
           </td>
         </tr>
       </tbody>
