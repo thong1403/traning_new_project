@@ -73,59 +73,64 @@
       </tbody>
     </table>
     <button class="w-25 btn-newUser pt-2 pb-2" @click="clickNewUser">NEWUSER</button>
+    <h1>{{ count}}</h1>
   </div>
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios'
+import { mapState } from 'vuex'
 
-console.log(this.user);
+console.log(this.user)
 export default {
-  data() {
+  data () {
     return {
-       searchTerm: '',
-    results: [] ,
+      searchTerm: '',
+      results: [],
       profile: {
-        name: "",
-        Projects: "",
-        Revenus: "",
-        position: "",
-        avata: "",
-        wage: "",
-        id: ""
+        name: '',
+        Projects: '',
+        Revenus: '',
+        position: '',
+        avata: '',
+        wage: '',
+        id: ''
       },
       users: [],
-      name: "",
-      avata: "",
+      name: '',
+      avata: '',
       Projects: 0,
       Revenus: 0,
-      firstName: "",
-      lastName: "",
-      position: "",
+      firstName: '',
+      lastName: '',
+      position: '',
       id: 0
-    };
+    }
   },
-  created() {
+  computed: {
+    ...mapState(['count'])
+  },
+  created () {
     axios
-      .get("http://localhost:3000/user")
+      .get('http://localhost:3000/user')
       .then(data => {
-        this.users = data.data;
-        console.log(this.users);
-        this.avata = data.data[0].avata;
-        this.name = data.data[0].firstName + data.data[0].lastName;
-        this.Projects = data.data[0].Projects;
-        this.Revenus = data.data[0].Revenus;
-        this.position = data.data[0].position;
+        this.users = data.data
+        console.log(this.users)
+        this.avata = data.data[0].avata
+        this.name = data.data[0].firstName + data.data[0].lastName
+        this.Projects = data.data[0].Projects
+        this.Revenus = data.data[0].Revenus
+        this.position = data.data[0].position
       })
-      .catch(err => console.log(err));
+      .catch(err => console.log(err))
   },
 
   methods: {
-    showDetail(id) {
-      this.$router.push(`/${id}`);
+    showDetail (id) {
+      this.$router.push(`/${id}`)
     },
-    deleteUser(id){
-         axios.delete(`http://localhost:3000/user/${id}`)
+    deleteUser (id) {
+      axios.delete(`http://localhost:3000/user/${id}`)
         .then(data => {
           alert('Xoá thành công')
           this.$router.push('/')
@@ -134,22 +139,21 @@ export default {
         )
         .catch(err => console.log(err))
     },
-      search() {
-    axios.get(`http://localhost:3000/user/?name=${this.searchTerm}`)
-      .then(response => {
-        this.results = response.data[0];
-        console.log(this.results);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  },
-  clickNewUser(){
-    this.$router.push('/newuser')
-
+    search () {
+      axios.get(`http://localhost:3000/user/?name=${this.searchTerm}`)
+        .then(response => {
+          this.results = response.data[0]
+          console.log(this.results)
+        })
+        .catch(error => {
+          console.error(error)
+        })
+    },
+    clickNewUser () {
+      this.$router.push('/newuser')
+    }
   }
-  }
-};
+}
 </script>
 <style>
 .overflow-hidden {
