@@ -50,6 +50,7 @@
 import axios from 'axios'
 import Navbar from './Navbar.vue'
 import SideBar from './SideBar.vue'
+import Swal from 'sweetalert2'
 
 export default {
   components: {
@@ -98,16 +99,21 @@ export default {
           console.log(err)
         })
     },
-     handleClick () {
+    handleClick () {
       axios.put(`http://localhost:3000/user/${this.id}`, this.profile)
         .then(data => {
-          alert('Edit thành công')
+          Swal.fire({
+            title: ' SUCCESS!',
+            text: 'successfully added update members.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          })
           this.$router.push('/home')
         })
         .catch(err => console.log(err))
     },
-    clickHome(){
-       this.$router.push('/home')
+    clickHome () {
+      this.$router.push('/home')
     }
   }
 
@@ -118,7 +124,7 @@ body{
   background-color: #E4E4E4;
 }
 .w-100{
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 .img-user{
   border-radius: 100%;

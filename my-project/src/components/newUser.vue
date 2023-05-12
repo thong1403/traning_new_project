@@ -47,6 +47,7 @@
 import Navbar from './Navbar.vue'
 import SideBar from './SideBar.vue'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 export default {
   components: {
     Navbar, SideBar
@@ -68,7 +69,12 @@ export default {
     handleClick () {
       axios.post('http://localhost:3000/user', this.profile)
         .then(data => {
-          alert('thành công')
+          Swal.fire({
+            title: ' SUCCESS!',
+            text: 'successfully added new members.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          })
           this.$router.push('/home')
         })
         .catch(err => console.log(err))

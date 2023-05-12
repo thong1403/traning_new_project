@@ -73,13 +73,13 @@
       </tbody>
     </table>
     <button class="w-25 btn-newUser pt-2 pb-2" @click="clickNewUser">NEWUSER</button>
-    <h1>{{ count}}</h1>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import { mapState } from 'vuex'
+import { mapActions, mapState } from 'vuex'
+import Swal from 'sweetalert2'
 
 console.log(this.user)
 export default {
@@ -108,7 +108,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['count'])
+    ...mapState(['users'])
   },
   created () {
     axios
@@ -132,7 +132,12 @@ export default {
     deleteUser (id) {
       axios.delete(`http://localhost:3000/user/${id}`)
         .then(data => {
-          alert('Xoá thành công')
+          Swal.fire({
+            title: 'DELETE SUCCESS!',
+            text: 'Member successfully deleted.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          })
           this.$router.push('/')
         }
 
@@ -151,7 +156,8 @@ export default {
     },
     clickNewUser () {
       this.$router.push('/newuser')
-    }
+    },
+    ...mapActions(['api'])
   }
 }
 </script>
